@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <a href="{% url 'orders-list' prev_date %}"> Предыдущая дата </a> | {{ date_orders|date:"d F Y" }} | <a href="{% url 'orders-list' next_date %}"> Следующая дата </a>
+</body>
+</html>
